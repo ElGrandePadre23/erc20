@@ -32,14 +32,14 @@ const sendShieldedQuery = async (provider, destination, data) => {
 // Main function to interact with the contract and retrieve data
 async function main() {
   // Address of the deployed contract
-  const replace_contractAddress = "0xb2E4BB7422d6Ac3BbA81b0B386f84a296AcA1080";
+  const replace_contractAddress = "0x009eCBEf5886AD75D184220fc3cEA3ccd35dcb09";
 
   // Get the signer (your account)
   const [signer] = await hre.ethers.getSigners();
 
   // Create a contract instance
   const replace_contractFactory = await hre.ethers.getContractFactory(
-    "SwisstronikTestToken2"
+    "TestToken"
   );
   const contract = replace_contractFactory.attach(replace_contractAddress);
 
